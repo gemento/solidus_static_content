@@ -1,0 +1,37 @@
+---
+de:
+  activerecord:
+    attributes:
+      spree/page:
+        body: Inhalt
+        foreign_link: "Externer Link (URL)"
+        layout: Layout
+        meta_description: Meta-Beschreibung
+        meta_keywords: Meta-Schlüsselwörter
+        meta_title: Meta-Titel
+        position: Position
+        render_layout_as_partial: "Rendern Layout als partielle"
+        show_in_footer: "Im Fußzeile anzeigen"
+        show_in_header: "Im Kopfzeile anzeigen"
+        show_in_sidebar: "In der Seitenleiste anzeigen"
+        slug: Pfad
+        title: Titel
+        visible: Sichtbar
+    models:
+      spree/page:
+        few: Seiten
+        many: Seiten
+        one: Seite
+        other: Seiten
+  spree:
+    admin:
+      tab:
+        pages: Seiten
+    back_to_static_pages_list: "Zurück zu den statischen Seiten Liste"
+    page: Seite
+    pages: Seiten
+    static_content:
+      static_pages: Statische Seiten
+      new_page: Neue Seite
+      editing_page: Seite bearbeiten
+      link: Link

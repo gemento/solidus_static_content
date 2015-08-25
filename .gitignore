@@ -1,0 +1,8 @@
+.DS_Store
+nbproject
+**.gem
+Gemfile.lock
+spec/dummy/
+.rvmrc
+tmp
+coverage

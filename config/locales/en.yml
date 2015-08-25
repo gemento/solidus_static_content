@@ -1,0 +1,37 @@
+---
+en:
+  activerecord:
+    attributes:
+      spree/page:
+        body: Body
+        foreign_link: "Foreign link (URL)"
+        layout: Layout
+        meta_description: "Meta Description"
+        meta_keywords: "Meta Keywords"
+        meta_title: "Meta Title"
+        position: Position
+        render_layout_as_partial: "Render layout as partial"
+        show_in_footer: "Show in footer"
+        show_in_header: "Show in header"
+        show_in_sidebar: "Show in sidebar"
+        slug: Slug
+        title: Title
+        visible: Visible
+    models:
+      spree/page:
+        few: Pages
+        many: Pages
+        one: Page
+        other: Pages
+  spree:
+    admin:
+      tab:
+        pages: Pages
+    back_to_static_pages_list: "Back to static pages list"
+    page: Page
+    pages: Pages
+    static_content:
+      static_pages: Static pages
+      new_page: New page
+      editing_page: Editing page
+      link: Link

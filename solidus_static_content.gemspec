@@ -2,7 +2,7 @@ version = File.read(File.expand_path("../VERSION", __FILE__)).strip
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_static_content'
+  s.name        = 'solidus_static_content'
   s.version     = '1.0.0'
   s.summary     = 'Extention to manage the static pages for your Spree shop.'
   s.description = s.summary
@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency "solidus_api", [">= 1.0.0.pre", "< 2"]
-  s.add_dependency "solidus_backend", [">= 1.0.0.pre", "< 2"]
-  s.add_dependency "solidus_core", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency "solidus_api", [">= 1.0.0", "< 2"]
+  s.add_dependency "solidus_backend", [">= 1.0.0", "< 2"]
+  s.add_dependency "solidus_core", [">= 1.0.0", "< 2"]
 
   s.add_development_dependency 'capybara', '~> 2.2.1'
   s.add_development_dependency 'factory_girl', '~> 4.4'

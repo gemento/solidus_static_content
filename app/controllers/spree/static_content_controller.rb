@@ -5,7 +5,6 @@ class Spree::StaticContentController < Spree::StoreController
   layout :determine_layout
 
   def show
-    binding.pry
     @page = Spree::Page.by_store(current_store).visible.find_by_slug!(request.path)
   end
 

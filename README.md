@@ -45,13 +45,13 @@ Finally, toggle the visibility using the 'Visible' checkbox. If it is unchecked,
 Add to your `Gemfile`:
 
 ```ruby
-gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '2-4-stable'
+gem 'solidus_static_content', github: 'deseretbook/solidus_static_content'
 ```
 
 Run:
 
     bundle install
-    rails g spree_static_content:install
+    rails g solidus_static_content:install
 
 That's all!
 

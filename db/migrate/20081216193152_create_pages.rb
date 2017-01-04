@@ -1,4 +1,4 @@
-class CreatePages < ActiveRecord::Migration
+class CreatePages < ActiveRecord::Migration[4.2]
   def self.up
     create_table :spree_pages do |t|
       t.string :title

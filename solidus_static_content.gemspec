@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = '2.0.0'
   s.summary     = 'Extention to manage the static pages for your Spree shop.'
   s.description = s.summary
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.2.2'
 
   s.authors      = [%q{Peter Berkenbosch}, %q{Roman Smirnov}]
   s.email        = 'peter@pero-ict.nl'

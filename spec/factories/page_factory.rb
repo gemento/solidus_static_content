@@ -1,12 +1,12 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :page, class: Spree::Page do
-    title { generate(:random_string) }
-    body  { generate(:random_description) }
+    title { FFaker::Book.title }
+    body  { FFaker::Book.description }
 
     sequence(:slug) { |n| "/page#{n}" }
 
     trait :with_foreign_link do
-      foreign_link { Faker::Internet.http_url }
+      foreign_link { FFaker::Internet.http_url }
     end
   end
 end

@@ -6,12 +6,12 @@ feature 'Admin Static Content', js: true do
   context 'when no page exists' do
     background do
       visit spree.admin_path
-      click_link 'Configuration'
+      click_link 'Settings'
       click_link 'Pages'
     end
 
     scenario 'can create new page' do
-      expect(page).to have_text 'NO PAGES FOUND, ADD ONE!'
+      expect(page).to have_text /NO PAGES FOUND, ADD ONE!/i
 
       click_link 'New page'
       expect(page).to have_text 'Static pages'
@@ -40,7 +40,7 @@ feature 'Admin Static Content', js: true do
 
     background do
       visit spree.admin_path
-      click_link 'Configuration'
+      click_link 'Settings'
       click_link 'Pages'
     end
 

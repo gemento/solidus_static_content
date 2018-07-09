@@ -1,8 +1,10 @@
 require 'spec_helper'
+require 'byebug'
 
 feature 'Static Content Page', js: true do
 
   let!(:store) { create(:store, default: true) }
+  let!(:taxon) { create(:taxon, permalink: 'page3' ) }
 
   context 'render page' do
     scenario 'is a query string' do
@@ -30,8 +32,8 @@ feature 'Static Content Page', js: true do
     end
 
     scenario 'is limited within its own constraints' do
-      create(:page, slug: '/t/categories/page3', title: 'Constraint Test', stores: [store])
-      visit '/t/categories/page3'
+      create(:page, slug: '/t/page3', title: 'Constraint Test', stores: [store])
+      visit '/t/page3'
       expect(page).not_to have_text 'Constraint Test'
     end
 
